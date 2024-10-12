@@ -1,0 +1,34 @@
+/// Demostração de erro por path não encontrado
+GET http://localhost:8080/
+
+###
+/// Aqui você consferir quem são os alunos registrados
+GET http://localhost:8080/usuario
+
+###
+/// Aqui você pode enviar os Alunos
+POST http://localhost:8080/usuario
+Content-type: application/json
+
+{
+    "nome": "Samuel Anderson Machado Lopes",
+    "idade": 17,
+    "sexo": "masculino"
+    
+ 
+}
+###
+/// Altere a senha aqui
+PUT http://localhost:8080/usuario?id=
+Content-type: application/json
+
+{
+    "nome": "Samuel Anderson Machado Lopes",
+    "idade": 17,
+    "sexo": "masculino"
+ 
+}
+
+###
+/// Aqui você pode deletar algum aluno do seu servidor
+DELETE  http://localhost:8080/usuario?id=
